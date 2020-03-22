@@ -5,7 +5,7 @@ console.log("App.js is running!");
 // JSX - JavaScript XML
 var app = {
   title: "Indecision",
-  subtitle: "Let me help you decide!",
+  subtitle: "Let me help you make a decision",
   options: ["One", "Two"]
 };
 
@@ -44,9 +44,6 @@ var template = React.createElement(
   )
 );
 
-var name = "Anisa Mohamed";
-var age = 29;
-var locations = "Toronto";
 var user = { name: "Anisa Mohamed", age: 29, locations: "Toronto " };
 function getLocation(location) {
   if (location) {
@@ -54,7 +51,7 @@ function getLocation(location) {
       "p",
       null,
       "Location: ",
-      locations
+      location
     );
   }
 }

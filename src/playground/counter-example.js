@@ -10,9 +10,9 @@ class Counter extends React.Component {
   }
 
   componentDidMount() {
-    const json = localStorage.getItem('count')
-    const count = JSON.parse(json)
-    if(count) {
+    const stringCount = localStorage.getItem('count')
+    const count = parseInt(stringCount, 10)
+    if(!isNaN(count)) {
       this.setState(() => ({ count }))
     }
   }
@@ -20,8 +20,8 @@ class Counter extends React.Component {
   componentDidUpdate(prevProps, prevState) {
 
     if(this.state.count !== prevState.count) {
-      const json = JSON.stringify(this.state.count)
-      localStorage.setItem('count', json)
+    
+      localStorage.setItem('count', this.state.count)
       console.log('updating state')
     }
 

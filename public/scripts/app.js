@@ -28,9 +28,9 @@ var Counter = function (_React$Component) {
   _createClass(Counter, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var json = localStorage.getItem('count');
-      var count = JSON.parse(json);
-      if (count) {
+      var stringCount = localStorage.getItem('count');
+      var count = parseInt(stringCount, 10);
+      if (!isNaN(count)) {
         this.setState(function () {
           return { count: count };
         });
@@ -41,8 +41,8 @@ var Counter = function (_React$Component) {
     value: function componentDidUpdate(prevProps, prevState) {
 
       if (this.state.count !== prevState.count) {
-        var json = JSON.stringify(this.state.count);
-        localStorage.setItem('count', json);
+
+        localStorage.setItem('count', this.state.count);
         console.log('updating state');
       }
     }

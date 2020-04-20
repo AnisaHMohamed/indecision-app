@@ -65,50 +65,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__person_js__ = __webpack_require__(2);
+/***/ (function(module, exports) {
 
 
-console.log("app.js is running!");
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["c" /* square */](2));
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* add */](4, 5));
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["c" /* isAdult */](22));
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["a" /* canDrink */](20));
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* default */](100, 22))
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["b" /* default */](65))
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return square; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return add; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return subtract; });
-console.log("utils.js is running");
-
-const square = x => x * x;
-const add = (a, b) => a + b;
-const subtract = (c, d) => c - d;
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return isAdult; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return canDrink; });
-const isAdult = age => age >= 18;
-const canDrink = age => age >= 21;
-
-
-/* harmony default export */ __webpack_exports__["b"] = (age => age >= 65);
 
 /***/ })
 /******/ ]);

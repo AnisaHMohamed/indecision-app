@@ -3,7 +3,7 @@ import AddOption from "./AddOption";
 import Action from "./Action";
 import Header from "./Header";
 import Options from "./Options";
-
+import OptionModal from "./OptionModal";
 export default class IndecisionApp extends React.Component {
   state = {
     options: [],
@@ -70,6 +70,7 @@ export default class IndecisionApp extends React.Component {
           handleDeleteOptions={this.handleDeleteOptions}
         />
         <AddOption handleAddOption={this.handleAddOption} />
+        <OptionModal/>
       </div>
     );
   }

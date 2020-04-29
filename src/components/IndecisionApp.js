@@ -4,6 +4,7 @@ import Action from "./Action";
 import Header from "./Header";
 import Options from "./Options";
 import OptionModal from "./OptionModal";
+
 export default class IndecisionApp extends React.Component {
   state = {
     options: [],
@@ -59,7 +60,9 @@ export default class IndecisionApp extends React.Component {
     const subtitle = "Let me help you decide!";
     return (
       <div>
-        <Header subtitle={subtitle} />
+        <Header 
+        subtitle={subtitle} 
+        />
         <Action
           hasOptions={this.state.options.length > 0}
           handlePick={this.handlePick}
@@ -69,8 +72,12 @@ export default class IndecisionApp extends React.Component {
           options={this.state.options}
           handleDeleteOptions={this.handleDeleteOptions}
         />
-        <AddOption handleAddOption={this.handleAddOption} />
-        <OptionModal/>
+        <AddOption 
+        handleAddOption={this.handleAddOption} 
+        />
+        <OptionModal
+        
+        />
       </div>
     );
   }

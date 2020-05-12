@@ -1,7 +1,16 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "../../../SampleApp"
+		},
+		{
+			"path": "../../../reactExpress"
+		},
+		{
+			"path": "../../../ExpenseTracker"
+		},
+		{
+			"path": "../../../metronic_v6.1.8"
 		}
 	]
 }
